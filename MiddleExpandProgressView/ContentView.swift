@@ -14,8 +14,21 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            MiddleExpandProgressView()
+            MiddleExpandProgressView(repeatValue:false)
+            MiddleExpandProgressView(
+                progress: -1,
+                repeatValue:false
+            )
+            MiddleExpandProgressView(
+                progressColor: .red,
+                backgroundColor: Color(.systemGray6),
+                animationDuration: 0.2,
+                cornerRadius: 10,
+                height: 12,
+                repeatValue: true
+            )
         }
-        .padding()
     }
 }
 
