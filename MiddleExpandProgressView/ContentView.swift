@@ -23,7 +23,7 @@ struct ContentView: View {
             MiddleExpandProgressView(
                 progressColor: .red,
                 backgroundColor: Color(.systemGray6),
-                animationDuration: 0.2,
+                animationDuration: 0.3,
                 cornerRadius: 10,
                 height: 12,
                 repeatValue: true
